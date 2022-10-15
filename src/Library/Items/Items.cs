@@ -1,11 +1,17 @@
 namespace RoleplayGame;
 
-interface ISpell{
-    int AttackValue {get;}
-    int DefenseValue {get;}
+interface IItem{
+
+}
+interface ISpell : IItemAtack, IItemDefense {
+
 }
 
-interface IItemAtack{
+interface IMagicSpell : ISpell {
+    public SpellsBook SpellsBook { get; set; }
+}
+
+interface IItemAtack: IItem{
     int AttackValue {get;}
 }
 interface IItemDefense{

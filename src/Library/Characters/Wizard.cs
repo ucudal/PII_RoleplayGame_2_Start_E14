@@ -1,6 +1,6 @@
 namespace RoleplayGame
 {
-    public class Wizard : ICharacter
+    public class Wizard : ICharacter, IMagicSpell
     {
         private int health = 100;
 
