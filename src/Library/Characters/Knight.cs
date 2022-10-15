@@ -53,6 +53,10 @@ namespace RoleplayGame
             }
         }
 
+        void Attack(ICharacter myEnemy){
+            myEnemy.ReceiveAttack(this.AttackValue);
+        }
+
         public void Cure()
         {
             this.Health = 100;
